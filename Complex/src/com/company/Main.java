@@ -2,12 +2,20 @@ package com.company;
 import java.util.Scanner;
 import java.util.Locale;
 
+/**
+ * main class
+ */
 public class Main {
     /**
      *Количество точек
      */
     public static int n;
 
+    /**
+     * вычисление расстояния до начала координат
+     * @param i номер точки
+     * @return расстояние
+     */
     public static double Calc(int i)
     {
         double dist = 0;
@@ -15,12 +23,19 @@ public class Main {
         return dist;
     }
 
+    /**
+     * case 1
+     */
     public static void case1 (){
         for(int i = 0; i < n; i++) {
             System.out.println("Расстояние до начала координат " + (i+1) + " точки = " + Calc(i));
         }
     }
 
+    /**
+     * Вычиление расстояния между точками
+     * @param in параметр ввода
+     */
     public static void CalcPoints(Scanner in)
     {
         int num1, num2;
@@ -33,6 +48,9 @@ public class Main {
         System.out.print(distance);
     }
 
+    /**
+     * массив точек
+     */
     public static Point[] point;
     /**
      * main
